@@ -83,6 +83,31 @@ For example, the following replaces all occurrences of the phrase "Hello" with "
   Hi World
 ```
 [See sed tutorial](../../textbook/using-bash/sed)
+###cut
+The `cut` command is for cutting out selected portions of each line of a file.
+
+Example file test.txt
+```
+$ cat test.txt
+cat command for file oriented operations.
+cp command for copy files or directories.
+ls command to list out files and directories with its attributes.
+```
+Select columns of characters 
+```
+$ cut -c2 test.txt
+a
+p
+s
+```
+Select columns of characters using range
+```
+$ cut -c1-3 test.txt
+cat
+cp
+ls
+```
+
 ###history
 The `history` command prints out an incremented command line history. <br>
 It is common to use the `grep` command with the `history` command in order to search for a particular command.
